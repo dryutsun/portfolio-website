@@ -11,20 +11,27 @@ import {
   VStack,
   HStack,
   AspectRatio,
+  Link,
 } from "@chakra-ui/react";
-
-const ProjectUnit = () => {
+// const htmlparser2 = require('react-htmlparser2')
+const ProjectUnit = (props) => {
+  // const content = `${JSON.stringify(props.description)}`
   return (
     <Center py={3}>
-      <Flex direction="column" maxW={"480px"}>
+      <Flex direction="column" minW={"480px"} maxW={"480px"}>
         <Flex border="1px" borderColor={["primary.400"]}>
           <Text as="i" fontWeight="bold" p={3} color={["primary.400"]}>
-            Project 1
+            {props.title}
           </Text>
         </Flex>
-        <AspectRatio maxW="480px" ratio={16 / 9}>
+        <AspectRatio
+          order="1px"
+          borderColor={["primary.400"]}
+          maxW="480px"
+          ratio={16 / 9}
+        >
           <Image
-            src="https://bit.ly/naruto-sage"
+            src={`${props.image}`}
             alt="naruto"
             objectFit="cover"
           />
@@ -34,37 +41,74 @@ const ProjectUnit = () => {
           borderColor={["primary.400"]}
           direction="column"
         >
+          <Flex
+            w="100%"
+            alignItems="stretch"
+            justifyContent="space-evenly"
+            borderColor={["primary.400"]}
+          >
+            <Text
+              borderLeft="1px"
+              borderTop="1px"
+              w="50%"
+              as="i"
+              fontWeight="light"
+              p={3}
+              color={["primary.400"]}
+            >
+              <Link
+                color={["primary.500"]}
+                href="mailto:goro-dev@gmail.com"
+                isExternal
+              >
+                Github Repo
+              </Link>
+            </Text>
+
+            <Text
+              as="i"
+              borderRight="1px"
+              borderLeft="1px"
+              borderTop="1px"
+              w="50%"
+              fontWeight="light"
+              p={3}
+              color={["primary.400"]}
+            >
+              <Link
+                color={["primary.500"]}
+                href="mailto:goro-dev@gmail.com"
+                isExternal
+              >
+                Heroku Page
+              </Link>
+            </Text>
+          </Flex>
           <Flex>
             <Flex border="1px" borderColor={["primary.400"]}>
               <Text p={3} color={["primary.400"]} fontSize="xs">
-                2022-01-15
+                {props.date}
               </Text>
             </Flex>
             <Flex border="1px" flex={1} borderColor={["primary.400"]}>
               <Text p={3} color={["primary.400"]} fontSize="xs">
-                Stack: Mongo, Express, React, Node.js
+                {props.stack}
               </Text>
             </Flex>
             <Flex border="1px" borderColor={["primary.400"]}>
               <Text p={3} color={["primary.400"]} fontSize="xs">
-                #JS #UI
+                {props.tags}
               </Text>
             </Flex>
           </Flex>
 
           <Flex>
-            <Flex flex="1" border="1px" w="100%" borderColor={["primary.400"]}>
+            <Flex flex="1" 
+            borderLeft="1px"
+            borderRight="1px"
+            borderBottom="1px" w="100%" borderColor={["primary.400"]}>
               <Text color={["primary.400"]} p={3} fontSize="xs">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-                suscipit sodales rhoncus. Nulla dolor odio, dignissim eu
-                ultrices ac, mattis ac nisi. Nam fermentum ullamcorper magna a
-                laoreet. Etiam quam mi, pharetra ac lacus sit amet, volutpat
-                euismod justo. Nulla tempus fringilla odio sed dapibus. Proin
-                dignissim vulputate sapien at bibendum. Praesent ac vestibulum
-                lorem. Fusce quam neque, interdum sed consectetur auctor,
-                interdum vitae turpis. Nulla imperdiet enim ut mi bibendum
-                suscipit. Pellentesque vel rhoncus leo. Fusce ac ullamcorper
-                nulla. Proin porttitor dictum felis, non gravida dui.
+                {props.description}
               </Text>
             </Flex>
           </Flex>
