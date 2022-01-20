@@ -1,6 +1,7 @@
 import { Heading, Container, Flex, VStack, SimpleGrid } from "@chakra-ui/react";
 import ProjectUnit from "../ProjectUnit";
 import { ProjectPosts }  from "../../content/ProjectPosts"
+import { useState } from "react";
 
 
 const Projects = () => {
@@ -8,7 +9,7 @@ const Projects = () => {
     return <ProjectUnit 
     title={project.title}
     image={project.img}
-    date={project.date}
+    date={project.date} 
     stack={project.stack}
     tags={project.tags}
     description={project.description}

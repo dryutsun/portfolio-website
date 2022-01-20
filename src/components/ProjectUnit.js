@@ -13,12 +13,13 @@ import {
   AspectRatio,
   Link,
 } from "@chakra-ui/react";
-// const htmlparser2 = require('react-htmlparser2')
+import parse from "html-react-parser";
+
 const ProjectUnit = (props) => {
-  // const content = `${JSON.stringify(props.description)}`
+  let description = parse(props.description);
   return (
     <Center py={3}>
-      <Flex direction="column" minW={"480px"} maxW={"480px"}>
+      <Flex direction="column" minW={"480px"} maxW={"480px"} minH={"500px"}>
         <Flex border="1px" borderColor={["primary.400"]}>
           <Text as="i" fontWeight="bold" p={3} color={["primary.400"]}>
             {props.title}
@@ -30,11 +31,7 @@ const ProjectUnit = (props) => {
           maxW="480px"
           ratio={16 / 9}
         >
-          <Image
-            src={`${props.image}`}
-            alt="naruto"
-            objectFit="cover"
-          />
+          <Image src={`${props.image}`} alt="naruto" objectFit="fill" />
         </AspectRatio>
         <Flex
           alignItems="stretch"
@@ -90,7 +87,12 @@ const ProjectUnit = (props) => {
                 {props.date}
               </Text>
             </Flex>
-            <Flex border="1px" flex={1} borderColor={["primary.400"]}>
+            <Flex
+              border="1px"
+              flex={1}
+              borderColor={["primary.400"]}
+              minH={"60px"}
+            >
               <Text p={3} color={["primary.400"]} fontSize="xs">
                 {props.stack}
               </Text>
@@ -103,12 +105,17 @@ const ProjectUnit = (props) => {
           </Flex>
 
           <Flex>
-            <Flex flex="1" 
-            borderLeft="1px"
-            borderRight="1px"
-            borderBottom="1px" w="100%" borderColor={["primary.400"]}>
+            <Flex
+              flex="1"
+              borderLeft="1px"
+              borderRight="1px"
+              borderBottom="1px"
+              w="100%"
+              borderColor={["primary.400"]}
+              minH="250px"
+            >
               <Text color={["primary.400"]} p={3} fontSize="xs">
-                {props.description}
+                {description}
               </Text>
             </Flex>
           </Flex>

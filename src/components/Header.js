@@ -1,6 +1,6 @@
 import React from "react";
-import { Link, Box, Flex, Text, Button, Stack } from "@chakra-ui/react";
-
+import { Box, Flex, Text, Button, Stack } from "@chakra-ui/react";
+import { Link } from 'react-router-dom'
 import Logo from "./Logo";
 
 const NavBar = (props) => {
@@ -52,7 +52,7 @@ const MenuToggle = ({ toggle, isOpen }) => {
 
 const MenuItem = ({ children, isLast, to = "/", ...rest }) => {
   return (
-    <Link href={to}>
+    <Link to={to}>
       <Text fontWeight="medium" color={["primary.400"]} display="block" {...rest}>
         {children}
       </Text>
