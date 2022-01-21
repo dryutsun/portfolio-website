@@ -19,7 +19,7 @@ const ProjectUnit = (props) => {
   let description = parse(props.description);
   return (
     <Center py={3}>
-      <Flex direction="column" minW={"480px"} maxW={"480px"} minH={"500px"}>
+      <Flex direction="column" minW={"320px"} maxW={"480px"} minH={"500px"}>
         <Flex border="1px" borderColor={["primary.400"]}>
           <Text as="i" fontWeight="bold" p={3} color={["primary.400"]}>
             {props.title}
@@ -53,11 +53,7 @@ const ProjectUnit = (props) => {
               p={3}
               color={["primary.400"]}
             >
-              <Link
-                color={["primary.500"]}
-                href="mailto:goro-dev@gmail.com"
-                isExternal
-              >
+              <Link color={["primary.500"]} href={`${props.gh_url}`} isExternal>
                 Github Repo
               </Link>
             </Text>
@@ -74,10 +70,10 @@ const ProjectUnit = (props) => {
             >
               <Link
                 color={["primary.500"]}
-                href="mailto:goro-dev@gmail.com"
+                href={`${props.deploy_url}`}
                 isExternal
               >
-                Heroku Page
+                Deploy Page
               </Link>
             </Text>
           </Flex>

@@ -63,7 +63,7 @@ const About = () => {
           alignItems="flex-start"
           bg="primary.600"
         >
-          <Heading color={["primary.400"]} fontSize="xl" bg={["primary.100"]}>
+          <Heading color={["primary.400"]} fontSize="xl" p={3} bg={["primary.100"]}>
             Technologies I've been using:
           </Heading>
           <List spacing={4}>

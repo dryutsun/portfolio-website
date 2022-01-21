@@ -8,8 +8,8 @@ export const ProjectPosts = [
     title: "Ambient Mouse Trainer",
     date: "Fall 2021",
     img: img1,
-    gh_url: "",
-    deploy_url: "",
+    gh_url: "https://github.com/dryutsun/SEI-Project-OSU-Clone",
+    deploy_url: "https://dryutsun.github.io/SEI-Project-OSU-Clone/",
     stack: "Vanilla JS, Canvas",
     tags: "#JS, #Animation",
     description:
@@ -31,18 +31,18 @@ export const ProjectPosts = [
     date: "Winter 2021",
     img: img3,
     gh_url: "https://github.com/dryutsun/timemapclone",
-    deploy_url: "https://timemapclone.herokuapp.com/",
+    deploy_url: "https://watchcodeo.herokuapp.com/",
     stack: "Postgres, Express, Node.js, MapBox API",
     tags: "#JS, #PEN, #OSINT",
     description:
-      "Watch Codeo is a social video sharing platform for coders to share videos they found the most useful. ",
+      "<strong>Description: </strong>Watch Codeo is a social video sharing platform for coders to share videos they found the most useful. This was the first team project built over a week. <br> <br> <strong>Challenges: </strong>There were significant obstacles due to a lack of experience with Mongodb. The models were overly complicated and interconnected and this resulted in confusion. There were also many obstacles in handling state and prop passing but these pain-points were resolved as this allowed us to better understand best practices.",
   },
   {
     title: "B.R.I.D.G.E.S App",
     date: "Winter 2022",
     img: img4,
-    gh_url: "https://github.com/dryutsun/timemapclone",
-    deploy_url: "https://timemapclone.herokuapp.com/",
+    gh_url: "https://github.com/dryutsun/bokka-frontend",
+    deploy_url: "https://bokka-bridges-client.herokuapp.com/",
     stack: "Postgres, Express, Node.js, MapBox API",
     tags: "#JS, #PEN, #OSINT",
     description:

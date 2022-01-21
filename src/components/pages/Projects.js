@@ -13,6 +13,8 @@ const Projects = () => {
     stack={project.stack}
     tags={project.tags}
     description={project.description}
+    gh_url={project.gh_url}
+    deploy_url={project.deploy_url}
     />
     
   })
