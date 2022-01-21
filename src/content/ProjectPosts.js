@@ -35,7 +35,7 @@ export const ProjectPosts = [
     stack: "Postgres, Express, Node.js, MapBox API",
     tags: "#JS, #PEN, #OSINT",
     description:
-      "An implementation of the the <code>timemap</code> software developed by Forensic Architecture but in the PEN stack. Personal.pi allows you to keep track of the location and places of events and the 'entities'. This sort of dashboarding is common in Open Source Intelligence software. I developed Personal.pi to be as flexible and open to the user as possible, i.e. it could be used to track a missing cat or alternatively, a 'place' journal to track the location where the user had certain thoughts.",
+      "Watch Codeo is a social video sharing platform for coders to share videos they found the most useful. ",
   },
   {
     title: "B.R.I.D.G.E.S App",

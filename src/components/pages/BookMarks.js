@@ -19,12 +19,12 @@ import { SiExpress } from "react-icons/si";
 import { BookMarklet } from "../../content/BookMarklet";
 
 const BookMark = () => {
-  const bookmarkMap = BookMarklet.map((bookmark) => {
+  const bookmarkMap = BookMarklet.map((bookmark, index) => {
     return (
       <ListItem p={2} bg={["primary.100"]} _hover={{ bg: "primary.500" }}>
         <Link href={bookmark.link} isExternal>
-            <Text as="u" fontSize="s" color={["primary.400"]}>
-          {bookmark.title}
+            <Text as="i" fontSize="xs" color={["primary.400"]}>
+            {index} {"- "}{bookmark.title}
         </Text>
         </Link>
       </ListItem>

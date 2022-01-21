@@ -15,7 +15,7 @@ import {
 } from "@chakra-ui/react";
 import { IoLogoJavascript } from "react-icons/io";
 import { FaReact, FaNodeJs } from "react-icons/fa";
-import { SiExpress } from "react-icons/si";
+import { SiExpress, SiMongodb, SiPostgresql } from "react-icons/si";
 
 const About = () => {
   const [isSmallScreen] = useMediaQuery("(max-width: 500px)");
@@ -66,27 +66,34 @@ const About = () => {
           <Heading color={["primary.400"]} fontSize="xl" bg={["primary.100"]}>
             Technologies I've been using:
           </Heading>
-          <List spacing={2}>
+          <List spacing={4}>
             <ListItem>
-              <ListIcon as={IoLogoJavascript} bg="yellow.100" md="in" p={1} />
+              <ListIcon as={IoLogoJavascript} bg="yellow.100" md="in" p={2} w={8} h={8}  borderRadius="100%"/>
               <Text color={["primary.400"]}>
                 > ES6+ Javascript along with JSX, EJS and other syntax
                 extensions and templating languages.
               </Text>
             </ListItem>
             <ListItem>
-              <ListIcon as={FaReact} bg="#61dbfb" md="in" />
+              <ListIcon as={FaReact} bg="#61dbfb" md="in" p={2} w={8} h={8} borderRadius="100%" />
               <Text color={["primary.400"]}>
                 > React 16 with functional and class components. Currently
                 building projects in Next.js.{" "}
               </Text>
             </ListItem>
             <ListItem>
-              <ListIcon as={FaNodeJs} bg="#68a063" md="in" />
-              <ListIcon as={SiExpress} bg="#61dbfb" md="in" />
+              <ListIcon as={FaNodeJs} bg="#68a063" md="in" p={2} w={8} h={8} borderRadius="100%"/>
+              <ListIcon as={SiExpress} bg="#61dbfb" md="in" p={2} w={8} h={8} borderRadius="100%" />
               <Text color={["primary.400"]}>
                 > Node.js + Express to handle routing, sessions, controller
                 logic, API development, and views.{" "}
+              </Text>
+            </ListItem>
+            <ListItem>
+              <ListIcon as={SiMongodb} bg="#3FA037" md="in" p={2} w={8} h={8} borderRadius="100%" />
+              <ListIcon as={SiPostgresql} bg="#0064a5" md="in" p={2} w={8} h={8} borderRadius="100%" />
+              <Text color={["primary.400"]}>
+                > MongoDB or Postgres backend depending on the requirements of my applications. {" "}
               </Text>
             </ListItem>
           </List>

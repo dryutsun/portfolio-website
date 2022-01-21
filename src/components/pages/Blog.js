@@ -18,10 +18,10 @@ const Blog = () => {
         >
           <HStack>
             <Center h="100px">
-              <Heading color={["primary.400"]} m={0} >2022-01-19</Heading>
+              <Heading color={["primary.400"]} m={0} >Content Coming Soon...</Heading>
             </Center>
           </HStack>
-            <Text color={["primary.400"]}>> I'm a full stack software developer specializing in human centered web applications and community infrastructure application prototypes. Currently, I'm focused on building projects, skilling up and <Link color={["primary.500"]}href="mailto:goro-dev@gmail.com" isExternal>working for you</Link>.</Text>
+            <Text color={["primary.400"]}> Hello! I'm just getting this website off the ground so there isn't anything here yet!</Text>
 
 
         </VStack>
