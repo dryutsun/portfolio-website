@@ -18,14 +18,14 @@ import { FaReact, FaNodeJs } from "react-icons/fa";
 import { SiExpress } from "react-icons/si";
 
 const About = () => {
-  const [isSmallScreen] = useMediaQuery("(max-width: 400px)");
-
+  const [isSmallScreen] = useMediaQuery("(max-width: 500px)");
+  console.log(isSmallScreen);
   return (
     <Container maxWidth="container.xl" padding={0}>
       <Flex h="100vh" py={0}>
         <VStack
-          w="full"
-          h="50%"
+          w="50%"
+          h="full"
           p={8}
           spacing={8}
           alignItems="flex-start"
@@ -50,17 +50,13 @@ const About = () => {
             .
           </Text>
         </VStack>
-        {isSmallScreen ? (
-          <Center height="50px">
-            <Divider orientation="horizontal" />
-          </Center>
-        ) : (
-          <Center height="50vh">
-            <Divider orientation="vertical" />
-          </Center>
-        )}
+
+        <Center height="50vh">
+          <Divider orientation="vertical" />
+        </Center>
+
         <VStack
-          w="full"
+          w="50%"
           h="full"
           p={8}
           spacing={8}
@@ -72,7 +68,7 @@ const About = () => {
           </Heading>
           <List spacing={2}>
             <ListItem>
-              <ListIcon as={IoLogoJavascript} bg="yellow.100" md="in" />
+              <ListIcon as={IoLogoJavascript} bg="yellow.100" md="in" p={1} />
               <Text color={["primary.400"]}>
                 > ES6+ Javascript along with JSX, EJS and other syntax
                 extensions and templating languages.

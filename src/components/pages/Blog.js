@@ -2,6 +2,7 @@ import {HStack, chakra, List, ListItem, ListIcon,  Center, Divider, Text, Headin
 import { IoLogoJavascript } from 'react-icons/io'
 import { FaReact, FaNodeJs } from 'react-icons/fa'
 import { SiExpress } from 'react-icons/si'
+import BookMark from "./BookMarks"
 
 const Blog = () => {
   return (
@@ -28,32 +29,8 @@ const Blog = () => {
         <Center height='50vh'>
           <Divider orientation='vertical' />
         </Center>
-        <VStack
-          w="30%"
-          h="full"
-          p={8}
-          spacing={8}
-          alignItems="flex-start"
-          bg="primary.600"
-        >
-          
-          <Heading color={["primary.400"]} fontSize="l" bg={["primary.300"]} p={2}> Currently Reading: </Heading>
-          <List spacing={2}>
-            <ListItem>
-              <ListIcon as={IoLogoJavascript} bg='yellow.100' md="in" />
-              <Text fontSize="xs" color={["primary.400"]}>> ES6+ Javascript along with JSX, EJS and other syntax extensions and templating languages.</Text>
-            </ListItem>
-            <ListItem>
-              <ListIcon as={ FaReact } bg='#61dbfb' md="in" />
-              <Text color={["primary.400"]}>> React 16 with functional and class components. Currently building projects in Next.js. </Text>
-            </ListItem>
-            <ListItem>
-              <ListIcon as={ FaNodeJs } bg='#68a063' md="in" /><ListIcon as={ SiExpress } bg='#61dbfb' md="in" />
-              <Text color={["primary.400"]}>> Node.js + Express to handle routing, sessions, controller logic, API development, and views. </Text>
-            </ListItem>
-          </List>
-
-        </VStack>
+        
+        <BookMark />
       </Flex>
  
     </Container>
