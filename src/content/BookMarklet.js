@@ -12,8 +12,12 @@ export const BookMarklet = [
         link: "https://news.ycombinator.com/item?id=29993356",
     },
     {
-        title: "Tips for building High Quality Django Apps At Scale",
-        link: "https://doordash.engineering/2017/05/15/tips-for-building-high-quality-django-apps-at-scale/",
+        title: "Ask HN: Why are relational DBs are the standard instead of graph-based DBs? ",
+        link: "https://news.ycombinator.com/item?id=28736405",
+    },
+    {
+        title: "How do you visualize code?",
+        link: "https://alexanderell.is/posts/visualizing-code/",
     },
 
     ]

@@ -24,7 +24,7 @@ export const ProjectPosts = [
     stack: "Postgres, Express, Node.js, MapBox API",
     tags: "#JS, #PEN, #OSINT",
     description:
-      "An implementation of the the <code>timemap</code> software developed by Forensic Architecture but in the PEN stack. Personal.pi allows you to keep track of the location and places of events and the 'entities'. I developed Personal.pi to be as flexible and open to the user as possible, i.e. it could be used to track a missing cat or alternatively, a 'place' journal to track the location where the user had certain thoughts. <strong>Challenges:</strong>",
+      "<strong> Description: </strong> An implementation of the the <code>timemap</code> software developed by Forensic Architecture but in the PEN stack. Personal.pi allows you to keep track of the location and places of events and the 'entities'. I developed Personal.pi to be as flexible and open to the user as possible, i.e. it could be used to track a missing cat or alternatively, a 'place' journal to track the location where the user had certain thoughts. <br><br><strong>Challenges:</strong> There were some bumps in integrating the MapBox API into my application because of the express view/rendering layer. After some research, I decided that I would integrate it via their CDN as a proof-of-concept.",
   },
   {
     title: "Watch Codeo",
@@ -35,7 +35,7 @@ export const ProjectPosts = [
     stack: "Postgres, Express, Node.js, MapBox API",
     tags: "#JS, #PEN, #OSINT",
     description:
-      "<strong>Description: </strong>Watch Codeo is a social video sharing platform for coders to share videos they found the most useful. This was the first team project built over a week. <br> <br> <strong>Challenges: </strong>There were significant obstacles due to a lack of experience with Mongodb. The models were overly complicated and interconnected and this resulted in confusion. There were also many obstacles in handling state and prop passing but these pain-points were resolved as this allowed us to better understand best practices.",
+      "<strong>Description: </strong>Watch Codeo is a social video sharing platform for coders to share videos they found the most useful. This was the first team project built over a week. <br> <br> <strong>Challenges: </strong> We were trying to coerce a NOSQL database to act like a relational database. Our team was new to React so there were also many obstacles in handling state and prop passing but these pain-points were resolved as this allowed us to better understand best practices.",
   },
   {
     title: "B.R.I.D.G.E.S App",
@@ -46,6 +46,6 @@ export const ProjectPosts = [
     stack: "Postgres, Express, Node.js, MapBox API",
     tags: "#JS, #PEN, #OSINT",
     description:
-      "During the pandemic, I played a game called 'Death Stranding' which had a profound effect on my ability to deal with our bleak circumstance. I did not have to imagine that we were living in the world that Death Stranding presented because in a sense, we were already living that reality. I decided that the best tribute to this painful experience would be to build a 'two-layered' courier application. With some applications like doordash, the user and the 'deliverer' have completely different experiences and I wanted to reflect that in the application that I wrote.",
+      "<strong>Description: </strong> B.R.I.D.G.E.S. App was a tribute to the game Death Stranding and all the delivery workers who made the last few years less painful. I wanted to challenge myself in this one and build an app with multiple user flows: One for the person requesting a delivery and another flow for the delivery person. This allowed me to study the uses of data from multiple user perspectives and experiences.<br><br><strong>Challenges:</strong> The library I wanted to use was not being maintained and fell out of compatability for my version of npm and react. As a result, I will have to build this integration myself.",
   },
 ];

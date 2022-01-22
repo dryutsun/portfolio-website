@@ -24,7 +24,7 @@ const About = () => {
     <Container maxWidth="container.xl" padding={0}>
       <Flex h="100vh" py={0}>
         <VStack
-          w="50%"
+          w="full"
           h="full"
           p={8}
           spacing={8}
@@ -36,9 +36,8 @@ const About = () => {
             I like building things.
           </Heading>
           <Text color={["primary.400"]}>
-            > I'm a full stack software developer specializing in human centered
-            web applications and community infrastructure application
-            prototypes. Currently, I'm focused on building projects, skilling up
+            > I'm a full stack software developer looking to specialize in community centered
+            web applications. Currently, I'm focused on building projects, skilling up
             and{" "}
             <Link
               color={["primary.500"]}

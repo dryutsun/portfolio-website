@@ -7,13 +7,14 @@ import About from "./components/pages/About";
 import Projects from "./components/pages/Projects";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Blog from "./components/pages/Blog";
+import AboutMe from "./components/pages/AboutMe"
 function App() {
   return (
     <>
       <NavBar />
       <Routes>
         <Route path="/" element={<About />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/about" element={<AboutMe />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/blog" element={<Blog />} />
       </Routes>
