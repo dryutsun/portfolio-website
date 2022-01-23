@@ -32,7 +32,7 @@ export const ProjectPosts = [
     img: img3,
     gh_url: "https://github.com/dryutsun/timemapclone",
     deploy_url: "https://watchcodeo.herokuapp.com/",
-    stack: "Postgres, Express, Node.js, MapBox API",
+    stack: "MongoDb, Express, React, Node.js",
     tags: "#JS, #PEN, #OSINT",
     description:
       "<strong>Description: </strong>Watch Codeo is a social video sharing platform for coders to share videos they found the most useful. This was the first team project built over a week. <br> <br> <strong>Challenges: </strong> We were trying to coerce a NOSQL database to act like a relational database. Our team was new to React so there were also many obstacles in handling state and prop passing but these pain-points were resolved as this allowed us to better understand best practices.",
@@ -43,7 +43,7 @@ export const ProjectPosts = [
     img: img4,
     gh_url: "https://github.com/dryutsun/bokka-frontend",
     deploy_url: "https://bokka-bridges-client.herokuapp.com/",
-    stack: "Postgres, Express, Node.js, MapBox API",
+    stack: "MongoDb, Express, React, Node.js",
     tags: "#JS, #PEN, #OSINT",
     description:
       "<strong>Description: </strong> B.R.I.D.G.E.S. App was a tribute to the game Death Stranding and all the delivery workers who made the last few years less painful. I wanted to challenge myself in this one and build an app with multiple user flows: One for the person requesting a delivery and another flow for the delivery person. This allowed me to study the uses of data from multiple user perspectives and experiences.<br><br><strong>Challenges:</strong> The library I wanted to use was not being maintained and fell out of compatability for my version of npm and react. As a result, I will have to build this integration myself.",
