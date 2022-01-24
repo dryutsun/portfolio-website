@@ -30,7 +30,7 @@ export const ProjectPosts = [
     title: "Watch Codeo",
     date: "Winter 2021",
     img: img3,
-    gh_url: "https://github.com/dryutsun/timemapclone",
+    gh_url: "https://github.com/jmeier2715/bingbong-client",
     deploy_url: "https://watchcodeo.herokuapp.com/",
     stack: "MongoDb, Express, React, Node.js",
     tags: "#JS, #PEN, #OSINT",

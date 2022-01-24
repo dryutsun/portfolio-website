@@ -1,5 +1,4 @@
 import {
-  chakra,
   List,
   ListItem,
   ListIcon,
@@ -14,7 +13,8 @@ import {
   useMediaQuery,
 } from "@chakra-ui/react";
 import { IoLogoJavascript } from "react-icons/io";
-import { FaReact, FaNodeJs } from "react-icons/fa";
+import { FaReact, FaNodeJs, FaLinkedin } from "react-icons/fa";
+import { BsGithub} from 'react-icons/bs'
 import { SiExpress, SiMongodb, SiPostgresql } from "react-icons/si";
 
 const About = () => {
@@ -41,13 +41,25 @@ const About = () => {
             and{" "}
             <Link
               color={["primary.500"]}
-              href="mailto:goro-dev@gmail.com"
+              href="mailto:goro-development@gmail.com"
               isExternal
             >
               working for you
             </Link>
             .
           </Text>
+          <List spacing={4}>
+          <ListItem>
+            <Link href="https://www.linkedin.com/in/goroikedaiyeki/">
+            <ListIcon as={FaLinkedin} color="#0077b5" md="in" p={1} w={8} h={8} />
+            </Link>
+            <Link href="https://github.com/dryutsun">
+            <ListIcon as={BsGithub} bg="#211F1F" color="#FFFFFF" md="in" p={1} w={8} h={8}  borderRadius="100%"/>
+            </Link>
+              <Text color={["primary.400"]}>
+              </Text>
+          </ListItem>
+          </List>
         </VStack>
 
         <Center height="50vh">
